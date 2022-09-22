@@ -1,30 +1,29 @@
 # numerical-computing
-this lecture is learn the methods to find the (approximation) roots of a polynomial
+This lecture aims to study methods to find (approximate) roots of polynomials
 
 ## 1. Bolzano Method
 also called as the `Half Interval method`, the `Divide method`, the `Bisection method`, or the `Binary Cutting method`.
 
-<!-- <blockquote> -->
-> Langkah-langkah yang harus dilakukan pada metode Bolzano adalah :
+> The steps that must be carried out in the Bolzano method are:
 
-1. Hitung fungsi pada interval yang sama dari x hingga terjadi perubahan tanda dari f(xn) dan f(xn+1). Atau dengan kata lain: f(xn) x f(xn+1) < 0;
+1. Calculate the function on the same interval from `x` until the sign changes from `f(xn)` and `f(x(n+1))`. Or in other words: `f(xn) x f(x(n+1)) < 0`
 
-2. Estimasi pertama untuk akar persamaan dapat diperoleh melalui :  xt = (xn + xn+1) / 2;
+2. The first estimate for the root of the equation can be obtained by: `xt = (xn + x(n+1)) / 2`
 
-3. Lakukan evaluasi untuk menentukan dalam interval mana akar persamaan berada :
+3. Perform an evaluation to determine in which interval the roots of the equation are:
 
-	a.  Jika f(xn) * f(xn+1) < 0
-		akar persamaan dalam sub-interval pertama, tetapkan xn+1 = xt, dan 
-		lanjutkan ke langkah 4;
+    a. If `f(xn) * f(x(n+1)) < 0`
 
-	b.  Jika f(xn) * f(xn+1) > 0
-		akar persamaan dalam sub-interval kedua, tetapkan xn = xt, dan 
-		lanjutkan ke langkah 4;
+        then the root of the equation is in the first sub-interval, set x(n+1) = xt, and go to step 4
 
-	c.  Jika f(xn) * f(xn+1) = 0
-		akar persamaan adalah xt, dan hitungan selesai;
+    b. If `f(xn) * f(x(n+1)) > 0`
 
-4. Kembali ke langkah 2 untuk menghitung nilai perkiraan akar yang baru;
+        then the roots of the equation are in the second sub-interval, set xn = xt, and go to step 4
 
-5. Jika nilai yang didapat pada no. 4 sudah sesuai denga  batasan yang ditentukan, maka proses selesai, dan xt adalah akar yang dicari.
-<!-- </blockquote> -->
+    c. If `f(xn) * f(x(n+1)) = 0`
+
+        then the root of the equation is xt, and the calculation is complete
+
+4. Return to step 2 to calculate the new approximate root value
+
+5. If the value obtained in step 4 is in accordance with the specified constraints, then the process is complete, and `xt` is the root to be searched for.

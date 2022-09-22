@@ -20,7 +20,7 @@ Disebut pula sebagai metode `Setengah Interval` (Interval Halving), metode `Bagi
 
         maka akar persamaan berada dalam sub-interval kedua, tetapkan xn = xt, dan lanjutkan ke langkah 4
 
-	c.  Jika ```f(xn) * f(x(n+1)) = 0```
+	c.  Jika `f(xn) * f(x(n+1)) = 0`
 
 		maka akar persamaan adalah xt, dan perhitungan selesai
 
