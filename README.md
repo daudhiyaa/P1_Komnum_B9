@@ -1,6 +1,12 @@
 # numerical-computing
 This lecture aims to study methods to find (approximate) roots of polynomials
 
+### how to run
+- clone the repo `git clone https://github.com/daudhiyaa/komnum.git`
+- open the terminal, then run
+- for .cpp file : `g++ fileName.cpp -o fileName`
+- for .py flie : `python3 fileName.py`
+
 ## 1. Bolzano Method
 also called as the `Half Interval method`, the `Divide method`, the `Bisection method`, or the `Binary Cutting method`.
 
