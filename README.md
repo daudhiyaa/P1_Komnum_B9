@@ -4,7 +4,7 @@ this lecture is learn the methods to find the (approximation) roots of a polynom
 ## 1. Bolzano Method
 also called as the `Half Interval method`, the `Divide method`, the `Bisection method`, or the `Binary Cutting method`.
 
-<blockquote>
+<!-- <blockquote> -->
 > Langkah-langkah yang harus dilakukan pada metode Bolzano adalah :
 
 1. Hitung fungsi pada interval yang sama dari x hingga terjadi perubahan tanda dari f(xn) dan f(xn+1). Atau dengan kata lain: f(xn) x f(xn+1) < 0;
@@ -27,4 +27,4 @@ also called as the `Half Interval method`, the `Divide method`, the `Bisection m
 4. Kembali ke langkah 2 untuk menghitung nilai perkiraan akar yang baru;
 
 5. Jika nilai yang didapat pada no. 4 sudah sesuai denga  batasan yang ditentukan, maka proses selesai, dan xt adalah akar yang dicari.
-</blockquote>
+<!-- </blockquote> -->
