@@ -52,8 +52,8 @@ def bolza(x1, x2, x3, fA, fB, fX):
 
 if __name__ == "__main__":
     list_x = []
-    x1 = float(input('\nmasukkan batas atas :'))
-    x2 = float(input('masukkan batas bawah :'))
+    x1 = float(input('\nmasukkan batas atas\t:'))
+    x2 = float(input('masukkan batas bawah\t:'))
     x3 = (x1+x2)/2
 
     fA, fB, fX = f(x1), f(x2), f(x3)
