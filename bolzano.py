@@ -10,7 +10,7 @@ def mid(s):
     return s.center(11, ' ')
 
 def header():
-    print('\n'+(''.join(map(str, ['-' for i in range(92)]))))
+    print('\n'+(''.join(map(str, ['-' for i in range(93)]))))
     print(mid('x1'), mid('f(x1)'), mid('x2'), mid('f(x2)'),  mid('x3'), mid('f(x3)'), sep='\t', end='\n')
     print((''.join(map(str, ['-' for i in range(92)]))), end='\n')
 
@@ -52,8 +52,8 @@ def bolza(x1, x2, x3, fA, fB, fX):
 
 if __name__ == "__main__":
     list_x = []
-    x1 = float(input('\nmasukkan batas atas\t:'))
-    x2 = float(input('masukkan batas bawah\t:'))
+    x1 = float(input('\nmasukkan batas bawah\t: '))
+    x2 = float(input('masukkan batas atas\t: '))
     x3 = (x1+x2)/2
 
     fA, fB, fX = f(x1), f(x2), f(x3)
