@@ -4,7 +4,7 @@ This lecture aims to study methods to find (approximate) roots of polynomials
 ### how to run
 - clone the repo `git clone https://github.com/daudhiyaa/komnum.git`
 - open the terminal, then run
-- for .cpp file : `g++ fileName.cpp -o fileName`
+- for .cpp file : `g++ fileName.cpp -o fileName` then write `./fileName`
 - for .py file : `python3 fileName.py`
 
 ## 1. Bolzano Method
