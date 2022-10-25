@@ -8,8 +8,8 @@ git clone https://github.com/daudhiyaa/komnum.git
 - for .cpp file : `g++ fileName.cpp -o fileName` then write `./fileName`
 - for .py file : `python3 fileName.py`
 
-## Methods to find (approximate) roots of polynomials
-### 1. Bolzano Method
+## Methods to find (approximate) roots of polynomials equation
+### Bolzano's Method
 also called as:
 
 - the `Half Interval method`
