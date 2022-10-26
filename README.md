@@ -9,8 +9,8 @@
 | 3   | Nadira Milha Nailul Fath          | 5025211253 |
 
 ## **Result's Preview**
-![preview1](https://user-images.githubusercontent.com/90663569/197854284-4acc1c6c-e632-4281-9c4e-2d140f9d4a27.png)
-![preview2](https://user-images.githubusercontent.com/90663569/197854294-fd317256-2671-41a7-a3d6-b118a3860fb4.png)
+![1](https://user-images.githubusercontent.com/90663569/197921542-dc4943e9-a103-4317-8146-f26d7bffba60.png)
+![2](https://user-images.githubusercontent.com/90663569/197921547-3d0f75f0-2dc2-458a-8702-5b271b89cef3.png)
 
 ## Penjelasan
 
