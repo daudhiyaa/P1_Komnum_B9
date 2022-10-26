@@ -14,15 +14,15 @@ def grafik(xAwal, xAkhir, df):
     lst_clr = ['r', 'orange', 'y', 'g', 'b', 'violet', 'purple', 'c']
     x = np.arange(xAwal, xAkhir, 0.1)
     y = np.vectorize(f)
-    plt.plot(x, y(x))
+    plt.plot(x, y(x), c='black')
 
     # animation = FuncAnimation(plt.figure, bolza, 100, interval=500, blit=True, repeat=False)
 
     plt.xlabel('x - axis')
     plt.ylabel('y - axis')
     plt.title('bolzano graphic')
-    plt.axvline(x=0, c="black", label="x=0")
-    plt.axhline(y=0, c="black", label="y=0")
+    plt.axvline(x=0, c="black", linestyle='dashed', label="x=0")
+    plt.axhline(y=0, c="black", linestyle='dashed', label="y=0")
     plt.legend()
     plt.grid()
 
