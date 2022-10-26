@@ -10,9 +10,9 @@ def f(x):
 def cek(fA, fB, fX, x1, x2, x3):
     return x1 if (min(abs(fA), min(abs(fB), abs(fX)))==abs(fA)) else x2 if (min(abs(fA), min(abs(fB), abs(fX)))==abs(fB)) else x3
 
-def grafik(x1, x2, df):
+def grafik(xAwal, xAkhir, df):
     lst_clr = ['r', 'orange', 'y', 'g', 'b', 'violet', 'purple', 'c']
-    x = np.arange(x1, x2, 0.1)
+    x = np.arange(xAwal, xAkhir, 0.1)
     y = np.vectorize(f)
     plt.plot(x, y(x))
 
@@ -33,14 +33,14 @@ def grafik(x1, x2, df):
     plt.show()
 
 def show_table(xAwal, xAkhir):
-    df = pd.DataFrame(data=all_data, columns=['x1', 'fA', 'x2', 'fB', 'x3', 'fX'])
+    df = pd.DataFrame(data=all_data, columns=['x1', 'f(x1)', 'x2', 'f(x2)', 'x3', 'f(x3)'])
     print(df)
     grafik(xAwal, xAkhir, df)
 
 def show_root(x1, x2, x3, fA, fB, fX, xAwal, xAkhir, ketelitian):
     print('\n------- ROOT FOUND -------',
-        '\nAkar\t\t=', round(cek(fA, fB, fX, x1, x2, x3), ketelitian),
-        '\ndengan f(akar)\t=', f(cek(fA, fB, fX, x1, x2, x3)), '\n')
+          '\nAkar\t\t=', round(cek(fA, fB, fX, x1, x2, x3), ketelitian),
+          '\ndengan f(akar)\t=', f(cek(fA, fB, fX, x1, x2, x3)), '\n')
     show_table(xAwal, xAkhir)
 
 all_data = []
@@ -48,7 +48,7 @@ def bolza(x1, x2, x3, fA, fB, fX, xAwal, xAkhir, ketelitian):
     if abs(fX) > pow(10, (-1 * ketelitian)):
         all_data.append([x1, fA, x2, fB, x3, fX])
         if fA * fX > 0: x1, fA, fB = x3, fX, f(x2)
-        else: x2, fB, fA = x3, fX, f(x1)
+        else          : x2, fB, fA = x3, fX, f(x1)
 
         x3 = (x1 + x2)/2.0
         fX = f(x3)
