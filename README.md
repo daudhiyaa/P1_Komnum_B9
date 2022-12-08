@@ -56,5 +56,3 @@ Jika kondisi tersebut tepenuhi, maka program akan berlanjut sesuai beberapa kond
    - dan nilai `f(x1)` tetap menjadi `f(x1)`
 
 Lalu set nilai `x3` menjadi (x1 + x2) / 2 dan set juga nilai `f(x3)`
-
-Sekian, terimakasih!
